@@ -1,8 +1,8 @@
 ﻿@model Practica_5.Models.ExternalLoginListViewModel
 @using Microsoft.Owin.Security
-
-<h4>Use otro servicio para iniciar sesión.</h4>
 <hr />
+<h4>Usar facebook para iniciar sesión.</h4>
+
 @{
     var loginProviders = Context.GetOwinContext().Authentication.GetExternalAuthenticationTypes();
     if (loginProviders.Count() == 0) {
