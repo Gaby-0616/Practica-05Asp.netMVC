@@ -12,7 +12,7 @@ namespace Practica_5.Controllers
 {
     public class EventosController : Controller
     {
-        private DemoVideoEntities4 db = new DemoVideoEntities4();
+        private dbSystem db = new dbSystem();
 
         // GET: Eventos
         public ActionResult Index()

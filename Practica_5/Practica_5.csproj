@@ -196,62 +196,44 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\AgendaEventocs.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AgendaEventocs.Context.tt</DependentUpon>
+    <Compile Include="Models\AspNetRoles.cs">
+      <DependentUpon>dbSystem.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\AgendaEventocs.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AgendaEventocs.tt</DependentUpon>
+    <Compile Include="Models\AspNetUserClaims.cs">
+      <DependentUpon>dbSystem.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\AgendaEventocs.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AgendaEventocs.edmx</DependentUpon>
+    <Compile Include="Models\AspNetUserLogins.cs">
+      <DependentUpon>dbSystem.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Contacto.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Contacto.Context.tt</DependentUpon>
+    <Compile Include="Models\AspNetUsers.cs">
+      <DependentUpon>dbSystem.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Contacto.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Contacto.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Contacto.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Contacto.edmx</DependentUpon>
+    <Compile Include="Models\consulta.cs">
+      <DependentUpon>dbSystem.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\contactos.cs">
-      <DependentUpon>Contacto.tt</DependentUpon>
+      <DependentUpon>dbSystem.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\DatosEstudi.Context.cs">
+    <Compile Include="Models\C__MigrationHistory.cs">
+      <DependentUpon>dbSystem.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbSystem.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DatosEstudi.Context.tt</DependentUpon>
+      <DependentUpon>dbSystem.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\DatosEstudi.cs">
+    <Compile Include="Models\dbSystem.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DatosEstudi.tt</DependentUpon>
+      <DependentUpon>dbSystem.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\DatosEstudi.Designer.cs">
+    <Compile Include="Models\dbSystem.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DatosEstudi.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\datosEstudiantes.cs">
-      <DependentUpon>DatosEstudi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\DatosEstudiantes.Designer.cs">
-      <DependentUpon>datosEstudiantes.cs</DependentUpon>
+      <DependentUpon>dbSystem.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\Eventos.cs">
-      <DependentUpon>AgendaEventocs.tt</DependentUpon>
+      <DependentUpon>dbSystem.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Lector.cs" />
@@ -281,35 +263,15 @@
     <Content Include="imagenes\bienvenidos-multicolor_1.jpg" />
     <Content Include="imagenes\Gabriel.jpeg" />
     <Content Include="imagenes\Miguel.jpg" />
-    <Content Include="Models\AgendaEventocs.Context.tt">
+    <Content Include="Models\dbSystem.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>AgendaEventocs.edmx</DependentUpon>
-      <LastGenOutput>AgendaEventocs.Context.cs</LastGenOutput>
+      <DependentUpon>dbSystem.edmx</DependentUpon>
+      <LastGenOutput>dbSystem.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\AgendaEventocs.tt">
+    <Content Include="Models\dbSystem.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>AgendaEventocs.edmx</DependentUpon>
-      <LastGenOutput>AgendaEventocs.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\Contacto.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Contacto.edmx</DependentUpon>
-      <LastGenOutput>Contacto.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\Contacto.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Contacto.edmx</DependentUpon>
-      <LastGenOutput>Contacto.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\DatosEstudi.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DatosEstudi.edmx</DependentUpon>
-      <LastGenOutput>DatosEstudi.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\DatosEstudi.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DatosEstudi.edmx</DependentUpon>
-      <LastGenOutput>DatosEstudi.cs</LastGenOutput>
+      <DependentUpon>dbSystem.edmx</DependentUpon>
+      <LastGenOutput>dbSystem.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -320,26 +282,12 @@
     <Content Include="DatosLogin\Login.edmx.diagram">
       <DependentUpon>Login.edmx</DependentUpon>
     </Content>
-    <EntityDeploy Include="Models\Contacto.edmx">
+    <EntityDeploy Include="Models\dbSystem.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Contacto.Designer.cs</LastGenOutput>
+      <LastGenOutput>dbSystem.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\Contacto.edmx.diagram">
-      <DependentUpon>Contacto.edmx</DependentUpon>
-    </Content>
-    <EntityDeploy Include="Models\AgendaEventocs.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>AgendaEventocs.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\AgendaEventocs.edmx.diagram">
-      <DependentUpon>AgendaEventocs.edmx</DependentUpon>
-    </Content>
-    <EntityDeploy Include="Models\DatosEstudi.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>DatosEstudi.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\DatosEstudi.edmx.diagram">
-      <DependentUpon>DatosEstudi.edmx</DependentUpon>
+    <Content Include="Models\dbSystem.edmx.diagram">
+      <DependentUpon>dbSystem.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -396,6 +344,7 @@
     <Content Include="Views\Eventos\Details.cshtml" />
     <Content Include="Views\Eventos\Edit.cshtml" />
     <Content Include="Views\Eventos\Index.cshtml" />
+    <Content Include="Views\contactos\Buscar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

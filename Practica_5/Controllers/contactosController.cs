@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
@@ -12,7 +13,7 @@ namespace Practica_5.Controllers
 {
     public class contactosController : Controller
     {
-        private DemoVideoEntities4 db = new DemoVideoEntities4();
+        private dbSystem db = new dbSystem();
 
         // GET: contactos
         public ActionResult Index()
@@ -123,5 +124,14 @@ namespace Practica_5.Controllers
             }
             base.Dispose(disposing);
         }
+        [HttpPost, ActionName("Buscar")]
+        public ActionResult Buscar(string nombre)
+        {
+            IEnumerable contactos = db.contactos.Where(a => a.Nombre.Contains(nombre)).ToList();
+           
+            return View(contactos);
+        }
+
+
     }
 }
